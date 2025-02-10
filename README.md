@@ -1,6 +1,6 @@
 # cluster-compare
 
-Data set used : (https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset)[https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset]
+Data set used : [https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset](https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset)
 
 ## Comparing different clustering models on the basis of several factors, such as: 
 - Evaluation parameters used
