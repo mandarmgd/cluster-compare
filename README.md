@@ -24,6 +24,7 @@ Combination of data preprocessing tools used:
 - Log transformation + normalization
 - Feature selection (Variance Threshold) + discretization
 - Robust scaling + feature engineering (using polynomial features)
+
 However, in order to ensure that the clustering models fit the data without any inconveniences all categorical data was encoded beforehand
 
 # Key findings 
