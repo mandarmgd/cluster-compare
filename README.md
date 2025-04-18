@@ -33,20 +33,20 @@ However, in order to ensure that the clustering models fit the data without any 
 
 
 ## Spectral Clustering
-- Best Performance: Standardization & PCA preprocessing yields the highest Silhouette scores (up to 0.384) and relatively good Davies-Bouldin and Calinski-Harabasz scores.
+- Best Performance: Robust Scaling & Feature Engineering yields the highest Silhouette score of 0.715 (at c = 3), with low Davies-Bouldin (1.088) and high Calinski-Harabasz (4176.576), indicating strong, well-separated clusters.
 - Worst Performance: Min-max scaling & outlier removal shows the lowest Silhouette scores (as low as 0.086) and poor Davies-Bouldin index, indicating weak clustering.
 
 ## Gaussian Mixture Model
-- Best Performance: Standardization & PCA again leads to the highest Silhouette scores (up to 0.358) and good Davies-Bouldin and Calinski-Harabasz scores.
+- Best Performance: Robust Scaling & Feature Engineering significantly boosts performance, with Silhouette scores up to 0.979, very low Davies-Bouldin index (0.422), and Calinski-Harabasz as high as 52336.92.
 - Worst Performance: No data preprocessing and min-max scaling & outlier removal result in very poor Silhouette scores (negative values), indicating poor cluster separation.
 
 ## Fuzzy C-Means Clustering
-- Best Performance: No data preprocessing surprisingly results in the highest Silhouette scores (up to 0.665), showing that raw data works best for this method.
+- Best Performance: Robust Scaling & Feature Engineering delivers the best overall performance with Silhouette scores up to 0.978, Davies-Bouldin index as low as 0.456 and Calinski-Harabasz as high as 77802.96
 - Worst Performance: Min-max scaling & outlier removal again leads to poor Silhouette scores (0.095) and high Davies-Bouldin index, showing weak cluster formation.
 
 # General Observations
-- Standardization & PCA is the most effective preprocessing method for Spectral Clustering and Gaussian Mixture Model.
-- No preprocessing works best for Fuzzy C-Means Clustering, suggesting that this method can handle raw data well.
-- Min-max scaling & outlier removal consistently performs poorly across all clustering techniques, indicating that it may distort data relationships.
+- Robust Scaling & Feature Engineering is the most effective preprocessing method across all clustering techniques
+- Min-max scaling & outlier removal consistently performs poorly across all models
+- Standardization & PCA works well, especially for Spectral Clustering and Gaussian Mixture Model. 
 
 
