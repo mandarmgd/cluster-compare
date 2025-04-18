@@ -47,6 +47,6 @@ However, in order to ensure that the clustering models fit the data without any 
 # General Observations
 - Robust Scaling & Feature Engineering is the most effective preprocessing method across all clustering techniques
 - Min-max scaling & outlier removal consistently performs poorly across all models
-- Standardization & PCA works well, especially for Spectral Clustering and Gaussian Mixture Model. 
+- Standardization & PCA works well, especially for Spectral Clustering and Gaussian Mixture Model.
 
 
